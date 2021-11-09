@@ -1,0 +1,12 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        'build',
+        '-f',
+        'Dockerfile',
+        '-t',
+        'gcr.io/sandbox-330309/nuxt-sample',
+        '.',
+      ]
+images: ['gcr.io/sandbox-330309/nuxt-sample']
